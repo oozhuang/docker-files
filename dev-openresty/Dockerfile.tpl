@@ -8,6 +8,7 @@ yum -y install openssl-devel pcre-devel ; \
 yum clean all; \
 cd /tmp/resource; \
 bash ./install.openresty.sh; \
+bash ./install.luarocks.sh; \
 cat /start.sh >> ./start.sh; \
 cp -f ./start.sh  /start.sh; \
 rm -rf /tmp/resource/*;

@@ -6,7 +6,7 @@ ADD resource /tmp/resource
 RUN set -e; \
 curl -so /etc/yum.repos.d/CentOS-Base.repo "http://mirrors.163.com/.help/CentOS6-Base-163.repo"; \
 yum -y update; \
-yum -y install wget tar bzip2 git md5sum gcc-c++ patch cmake ctags ncurses-devel zlib-devel bzip2-devel; \
+yum -y install wget tar bzip2 git md5sum gcc-c++ patch cmake ctags ncurses-devel zlib-devel bzip2-devel unzip; \
 yum -y remove vim-minimal; \
 yum clean all; \
 cd /tmp/resource; \
